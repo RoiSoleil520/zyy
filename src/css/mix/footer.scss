@@ -1,0 +1,31 @@
+$orange: #ff5a0f;
+.footer{
+	margin-top: 20px;
+	background: #f3f3f3;
+	height:60px;
+	width:100%;
+	.footer_container{
+		margin: 0 auto;
+		width: 720px;
+		.footer_title{
+			color: $orange;
+			font-weight: bold;
+			font-size: 20px;
+			display: inline-block;
+			line-height: 60px;
+		}
+		.footer_content{
+			display: inline-block;
+			font-size: 13px;
+			text-align: right;
+			float: right;
+			padding-top: 15px;
+			.content_desc{
+				display: block;
+				color: $orange;
+			}
+			.copyright{
+			}
+		}
+	}
+}
