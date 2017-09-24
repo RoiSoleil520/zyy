@@ -1,31 +1,31 @@
 $orange: #ff5a0f;
 .footer{
-	margin-top: 20px;
+	margin-top: 95px;
 	background: #f3f3f3;
-	height:60px;
-	width:100%;
-	.footer_container{
+	height:68px;
+	&__container{
 		margin: 0 auto;
-		width: 720px;
-		.footer_title{
-			color: $orange;
-			font-weight: bold;
-			font-size: 20px;
-			display: inline-block;
-			line-height: 60px;
-		}
-		.footer_content{
-			display: inline-block;
-			font-size: 13px;
-			text-align: right;
-			float: right;
-			padding-top: 15px;
-			.content_desc{
-				display: block;
-				color: $orange;
-			}
-			.copyright{
-			}
-		}
+		width: 960px;
+	}
+	&__title{
+		color: $orange;
+		font: bold 24px/68px "Arial-BoldMT";
+		display: inline-block;
+	}
+	&__content{
+		display: inline-block;
+		font-size: 13px;
+		text-align: right;
+		float: right;
+		padding-top: 18px;
+	}
+	&__desc{
+		font: normal 14px "FZLTHJW--GB1-0";
+		display: block;
+		color: $orange;
+	}
+	.copyright{
+		font: normal 14px "ArialMT";
+		color: #959595;
 	}
 }

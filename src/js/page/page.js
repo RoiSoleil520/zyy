@@ -1,32 +1,30 @@
 const $ = require('jquery');
 
-$(function($){
+$(function ($) {
 	'user strict';
 
-	var $interview_content_len = $('.interview_content li').length
-	   ,$interview_content = $('.interview_content li')
-	   ,$interview_content_next = $('.interview_content--next')
-	   ,$interview_content_prev = $('.interview_content--prev')
-	   ,$current = $('.interview_content li:first')
-	   //,$last = $('.interview_content li:last')
-	   ;
+	var $interview_len = $('.interview li').length,
+		$interview = $('.interview li'),
+		$interview_next = $('.interview__next'),
+		$interview_prev = $('.interview__prev'),
+		$current = $('.interview li:first')
+	;
+	let index = 0;
 
-	   //$('.interview_content li:nth-child(i++)').show();
-	   $current.show();
-
-	   $interview_content_next.click(function(){
-	   	if( $current.next('li')){
-	   		$current.next('li').show().siblings('li').hide();
-	   		$current = $current.next('li');
-	   		console.log( $interview_content_len);
-	   		console.log($current);
-	   	}
-	   })
-	   $interview_content_prev.click(function(){
-	   	if( $current.prev('li')){
-	   		$current.prev('li').show().siblings('li').hide();
-	   		$current = $current.prev('li');
-	   	}
-	   })
-
+	$interview_next.click(function () {
+		if (index === $interview_len - 1) {
+			index = 0;
+		} else {
+			index++;
+		}
+		$interview.eq(index).show().siblings('li').hide();
+	}).eq(0).click();
+	$interview_prev.click(function () {
+		if (index === 0) {
+			index = $interview_len - 1;
+		} else {
+			index--;
+		}
+		$interview.eq(index).show().siblings('li').hide();
+	}).eq(0).click();
 })
