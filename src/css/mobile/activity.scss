@@ -1,22 +1,10 @@
-.cover{
-	position:fixed;
-	top:0;
-	left:0;
-	bottom:0;
-	right:0;
-	background:#f4f4f4;
-	z-index:3;
-	opacity:0.6;
-	display:none;
-}
-@media only screen and (min-width: 960px){
-	$orange: #ff5a0f;
+$orange: #ff5a0f;
+@media only screen and (min-width: 320px) and (max-width: 960px){
 	.activity{
-		width: 960px;
-		margin: 0 auto;
+		margin: 0 15px;
 	}
 	.mod{
-		margin-top: 30px;
+		margin-top: 20px;
 		&__hd{
 			margin-bottom: 24px;
 		}
@@ -45,37 +33,32 @@
 		&__bd{}
 	}
 	.introduction{
-		width: 952px;
 		padding-bottom: 50px;
 		border: solid 1px #f1efef;
 		background-color: #ffffff;
 		position: relative;
 		&__shadow{
-			position: absolute;
-			top: -8px;
-			left: 10px;
-			z-index:-1;
-			width: 951px;
-			height: 325px;
-			background-color: #f1efef;
+			display: none;
 		}
 		&__detail{
+			width: 80%;
+			margin: 0 auto;
 			margin-top: 26px;
-			margin-left: 31px;
-			width: 885px;
 			font: normal 14px/24px "SimSun";
 			color: #666666;
 			letter-spacing: 0px;
 		}
 		&__container{
-			margin: 40px 0 0 0;
+			width: 90%;
+			margin: 0 auto;
+			margin-top: 20px;
 		}
 		&__item{
 			display: inline-block;
 			width: 130px;
 			height: 130px;
 			text-align: center;
-			margin-left: 41px;
+			margin-left: 7%;
 			border-radius: 64px;
 			position: relative;
 			z-index: 2;
@@ -130,7 +113,7 @@
 			}
 			&--5{
 				background: linear-gradient(to bottom right, #a7d7ea,#49e4df 27%, #3eb6d0 45%,#3288c1 62%,#5a5de8);
-				
+			
 			}
 			.icon-butterfly, .icon-spinner2, .icon-hand, .icon-bird, .icon-umbrella{
 				line-height: 130px;
@@ -163,6 +146,7 @@
 		}
 	}
 	.process{
+		overflow: scroll;
 		&__img{
 			margin: 16px 0;
 			width: 960;
@@ -170,11 +154,12 @@
 		}
 	}
 	.export{
-		display: flex;
 		&__img{
 			display: block;
 			width: 252px;
 			height: 176px;
+			margin: 0 auto;
+			margin-top: 30px;
 		}
 		&__name{
 			display: inline-block;
@@ -195,6 +180,7 @@
 	        -webkit-box-orient: vertical;
 			font: normal 14px/24px "SimSun";
 			color: #666666;
+			margin: 0 auto;
 		}
 		&__link{
 			display: inline-block;
@@ -218,36 +204,39 @@
 		}
 	}
 	.review{
-		flex: 1;
 		&__container{
 			margin: 32px 0;
+			width: 100%;
 		}
 		&__item{
+			width: 100%;
 			display: inline-block;
 			border: 1px solid #d6d6d6;
-			padding: 24px;
+			margin: 0 auto;
+			padding-bottom:30px;
+			text-align: center;
 			&--1{
-				margin-right: 20px;
+				margin-bottom: 20px;
 			}
 		}
 	}
 	.interview{
-		flex: 0 0 30%;
-		margin-left: 30px;
 		&__container{
 			margin: 32px 0;
 			border: 1px solid #d6d6d6;
 		}
 		&__item{
+			width: 100%;
 			display: inline-block;
-			padding: 24px;
-			&--1, &--2, &--3{
+			text-align: center;
+			&--2, &--3{
 				display: none;
 			}
 		}
 		&__conversion{
-			margin-bottom: 24px;
-			margin-left: 24px;
+			margin-top: 10px;
+			text-align: center;
+			margin-bottom: 30px;
 		}
 		&__prev, &__next{
 			display: inline-block;
@@ -266,7 +255,6 @@
 		&__next{}
 	}
 	.related{
-		display: flex;
 		&__container{
 			margin-top: 30px; 
 		}
@@ -293,10 +281,22 @@
 		}
 	}
 	.meeting{
-		flex: 1;
-		margin-right: 30px;
 	}
 	.document{
-		flex: 1;
+		margin-top: 30px;
+	}
+}
+
+@media only screen and (max-width: 360px){
+	.activity{
+		margin: 0 5px;
+	}
+	.introduction{
+		&__detail{
+			width: 90%;
+		}
+		&__item{
+			margin-left: 2%;
+		}
 	}
 }

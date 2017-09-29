@@ -1,24 +1,24 @@
 $orange: #ff5a0f;
-@media only screen and (min-width: 960px){
+@media only screen and (min-width: 320px) and (max-width: 960px){
 	.footer{
-		margin-top: 95px;
+		margin-top: 65px;
 		background: #f3f3f3;
 		height:68px;
 		&__container{
+			padding-top: 15px;
 			margin: 0 auto;
-			width: 960px;
+			width: 100%;
 		}
 		&__title{
 			color: $orange;
-			font: bold 24px/68px "Arial-BoldMT";
+			font: bold 14px "Arial-BoldMT";
 			display: inline-block;
 		}
 		&__content{
 			display: inline-block;
 			font-size: 13px;
-			text-align: right;
 			float: right;
-			padding-top: 18px;
+			text-align: right;
 		}
 		&__desc{
 			font: normal 14px "FZLTHJW--GB1-0";

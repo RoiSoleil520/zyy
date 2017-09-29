@@ -1,6 +1,7 @@
 //通过webpack.config.js里配置alias引用jquery
 const $ = require('jquery');
 let dxy_wechat_share = require('dxy-wechat-share');
+//require('slideout');
 require('./page/page.js');
 
 $(function($){

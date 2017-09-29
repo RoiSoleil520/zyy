@@ -2,191 +2,277 @@
 <html lang="en">
 @@include('header.inc')
 <body>
-<div>
-	<div class="header">
-		<div class="nav">
-			<ul class="nav__container">
-				<li class="nav__item"><a class="nav__link" href="#" title="首页">首页</a></li>
-				<li class="nav__item"><a class="nav__link" href="#" title="病例征集">病例征集</a></li>
-				<li class="nav__item"><a class="nav__link" href="#" title="病例分享">病例分享</a></li>
-				<li class="nav__item"><a class="nav__link" href="#" title="权威视角">权威视角</a></li>
-				<li class="nav__item"><a class="nav__link" href="#" title="读肝识炎">读肝识炎</a></li>
-				<li class="nav__item"><a class="nav__link" href="#" title="会议快讯">会议快讯</a></li>
-			</ul>
-			<div class="login">
-				<span class="login__in">登录</span>
-				<span>|</span>
-				<span class="login__reg">注册</span>
-			</div>
-			<div class="btn">
-				<div class="btn btn__down">
-					<a href="#" class="btn__link link--download">病例模板下载</a>
+	<div class="cover"></div>
+	<div>
+		<div class="header">
+			<div class="nav">
+				<ul class="nav__container">
+					<li class="nav__item"><a class="nav__link" href="#" title="首页">首页</a></li>
+					<li class="nav__item"><a class="nav__link" href="#" title="病例征集">病例征集</a></li>
+					<li class="nav__item"><a class="nav__link" href="#" title="病例分享">病例分享</a></li>
+					<li class="nav__item"><a class="nav__link" href="#" title="权威视角">权威视角</a></li>
+					<li class="nav__item"><a class="nav__link" href="#" title="读肝识炎">读肝识炎</a></li>
+					<li class="nav__item"><a class="nav__link" href="#" title="会议快讯">会议快讯</a></li>
+				</ul>
+				<div class="login">
+					<span class="login__in">登录</span>
+					<span>|</span>
+					<span class="login__reg">注册</span>
 				</div>
-				<div class="btn btn__up">
-					<a href="#" class="btn__link link--download">我要上传</a>
+				<div class="btn">
+					<div class="btn btn__down">
+						<a href="#" class="btn__link btn__link--download">病例模板下载</a>
+					</div>
+					<div class="btn btn__up">
+						<a href="#" class="btn__link btn__link--download">我要上传</a>
+					</div>
 				</div>
 			</div>
+			<!-- 移动端菜单按钮 -->
+			<nav class="menu" id="menu">
+				<section class="menu__section">
+				    <ul class="menu__container">
+				      	<li class="menu__item"><a class="menu__link" href="#" title="首页">首页</a></li>
+						<li class="menu__item"><a class="menu__link" href="#" title="病例征集">病例征集</a></li>
+						<li class="menu__item"><a class="menu__link" href="#" title="病例分享">病例分享</a></li>
+						<li class="menu__item"><a class="menu__link" href="#" title="权威视角">权威视角</a></li>
+						<li class="menu__item"><a class="menu__link" href="#" title="读肝识炎">读肝识炎</a></li>
+						<li class="menu__item"><a class="menu__link" href="#" title="会议快讯">会议快讯</a></li>
+				    </ul>
+			  	</section>
+			</nav>
+			<main class="panel" id="main">
+				<button class="btn__guid js-slideout-toggle"></button>
+			</main>
 		</div>
-	</div>
-	<div class="activity">
-	<!-- 	<div class="content"> -->
-			<div class="introduction">
-				<div class="introduction__guide">
-					<h3 class="activity__title">活动介绍</h3>
-					<a class="activity__more">更多>></a>
-					<div class="activity__line"></div>
-				</div>
-				<div class="introduction__content">
-				<div class="introduction__shadow"></div>
-					<p class="introduction__desc">作为消化科医生的您，是否积累了丰富的抗炎保肝临床经验，是否愿与医师同仁切磋交流肝病的诊疗技艺，是否期待得到权威专家的指导点评？
-						现正大天晴携手丁香园面向全国消化科医师推出「异」彩纷呈——消化肝病典型病例分享大赛。有奖病例征集重磅来袭，我们在这里等您！</p>
-					<ul class="introduction__container">
-						<li class="introduction__item introduction__item--1">
-							<span class="icon-butterfly"></span>
-							<span class="desc">异彩纷呈</span>
-						</li>
-						<li class="introduction__item introduction__item--2">
-							<span class="icon-spinner2"></span>
-							<span class="desc">长治久安</span>
-						</li>
-						<li class="introduction__item introduction__item--3">
-							<span class="icon-hand"></span>
-							<span class="desc">脂肪肝联盟</span>
-						</li>
-						<li class="introduction__item introduction__item--4">
-							<span class="icon-bird"></span>
-							<span class="desc">展翅计划</span>
-						</li>
-						<li class="introduction__item introduction__item--5">
-							<span class="icon-umbrella"></span>
-							<span class="desc">登陆计划</span>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="process">
-				<h3 class="activity__title">活动流程</h3>
-				<div class="activity__line"></div>
-				<img src="../images/process.png" class="process__img">
-			</div>
-			<div class="export">
-				<div class="export__review">
-					<h3 class="activity__title">专家评审</h3>
-					<a class="activity__more">更多>></a>
-					<div class="activity__line"></div>
-					<ul class="review">
-						<li class="review__item review__item--1">
-							<img src="../images/avatar.png" class="export__img">
-							<span class="export__name">郎景和</span>
-							<span class="export__from">中国工程院院士</span>
-							<p class="export__detail">郎景和，男，1964 年毕业于白求恩医科大学医疗系，毕业后在中国医学科学院，中国协和医科大学北京协和医院工作中国协和医科大学北京协和医院工作</p>
-							<a href="#" class="export__link">了解详情</a>
-						</li>
-						<li class="review__item review__item--2">
-							<img src="../images/avatar.png" class="export__img">
-							<span class="export__name">郎景和</span>
-							<span class="export__from">中国工程院院士</span>
-							<p class="export__detail">郎景和，男，1964 年毕业于白求恩医科大学医疗系，毕业后在中国医学科学院，中国协和医科大学北京协和医院工作中国协和医科大学北京协和医院工作</p>
-							<a href="#" class="export__link">了解详情</a>
-						</li>
-					</ul>
-				</div>
-				<div class="export__interview">
-					<h3 class="activity__title">专家访谈</h3>
-					<div class="activity__line"></div>
-					<ul class="interview">
-						<li class="interview__item interview__item--1">
-							<img src="../images/avatar.png" class="export__img">
-							<h4 class="export__title">中国工程院院士1</h4>
-							<p class="export__detail">郎景和，男，1964 年毕业于白求恩医科大学医疗系，毕业后在中国医学科学院，中国协和医科大学北京协和医院工作中国协和医科大学北京协和医院工作</p>
-						</li>
-						<li class="interview__item interview__item--2">
-							<img src="../images/avatar.png" class="export__img">
-							<h4 class="export__title">中国工程院院士2</h4>
-							<p class="export__detail">郎景和，男，1964 年毕业于白求恩医科大学医疗系，毕业后在中国医学科学院，中国协和医科大学北京协和医院工作中国协和医科大学北京协和医院工作</p>
-						</li>
-						<li class="interview__item interview__item--3">
-							<img src="../images/avatar.png" class="export__img">
-							<h4 class="export__title">中国工程院院士3</h4>
-							<p class="export__detail">郎景和，男，1964 年毕业于白求恩医科大学医疗系，毕业后在中国医学科学院，中国协和医科大学北京协和医院工作中国协和医科大学北京协和医院工作</p>
-						</li>
-						<div class="interview__conversion">
-							<span class="interview__prev"><</span>
-							<span class="interview__next">></span>
+		<div class="activity">
+			<div class="mod">
+					<div class="mod__hd">
+						<h3 class="mod__title">活动介绍</h3>
+						<a class="mod__more">更多>></a>
+						<div class="mod__line"></div>  <!-- &__guide -->
+					</div>
+					<div class="mod__bd">
+						<div class="introduction">
+							<div class="introduction__shadow"></div>
+							<p class="introduction__detail">作为消化科医生的您，是否积累了丰富的抗炎保肝临床经验，是否愿与医师同仁切磋交流肝病的诊疗技艺，是否期待得到权威专家的指导点评？
+								现正大天晴携手丁香园面向全国消化科医师推出「异」彩纷呈——消化肝病典型病例分享大赛。有奖病例征集重磅来袭，我们在这里等您！</p>
+							<ul class="introduction__container">
+								<li class="introduction__item introduction__item--1">
+									<span class="icon-butterfly"></span>
+									<span class="introduction__desc">异彩纷呈</span>
+								</li>
+								<li class="introduction__item introduction__item--2">
+									<span class="icon-spinner2"></span>
+									<span class="introduction__desc">长治久安</span>
+								</li>
+								<li class="introduction__item introduction__item--3">
+									<span class="icon-hand"></span>
+									<span class="introduction__desc">脂肪肝联盟</span>
+								</li>
+								<li class="introduction__item introduction__item--4">
+									<span class="icon-bird"></span>
+									<span class="introduction__desc">展翅计划</span>
+								</li>
+								<li class="introduction__item introduction__item--5">
+									<span class="icon-umbrella"></span>
+									<span class="introduction__desc">登陆计划</span>
+								</li>
+							</ul>  <!-- &__content -->
 						</div>
-					</ul>
+					</div>
+			</div>
+			<div class="mod">
+				<div class="mod__hd">
+					<h3 class="mod__title">活动流程</h3>
+					<div class="mod__line"></div>
+				</div>
+				<div class="mod__bd">
+					<div class="process">
+						<img src="../images/process.png" class="process__img">
+					</div>
 				</div>
 			</div>
-			<div class="related">
-				<div class="meeting">
-					<h3 class="activity__title">会议报道</h3>
-					<a class="activity__more">更多>></a>
-					<div class="activity__line"></div>
-					<ul class="related__container">
-						<li class="related__item related__item--meeting1">
-							<span class="related__arrow">➜</span>
-							<p class="related__desc">内容内容内容内容内容内容内容内容内内容内容内容内容内容内容内容内容内</p>
-						</li>
-						<li class="related__item related__item--meeting2">
-							<span class="related__arrow">➜</span>
-							<p class="related__desc">内容内容内容内容内容内容内容内容内内容内容内容内容内容内容内容内容内</p>
-						</li>
-						<li class="related__item related__item--meeting3">
-							<span class="related__arrow">➜</span>
-							<p class="related__desc">内容内容内容内容内容内容内容内容内内容内容内容内容内容内容内容内容内</p>
-						</li>
-						<li class="related__item related__item--meeting4">
-							<span class="related__arrow">➜</span>
-							<p class="related__desc">内容内容内容内容内容内容内容内容内内容内容内容内容内容内容内容内容内</p>
-						</li>
-						<li class="related__item related__item--meeting5">
-							<span class="related__arrow">➜</span>
-							<p class="related__desc">内容内容内容内容内容内容内容内容内内容内容内容内容内容内容内容内容内</p>
-						</li>
-					</ul>
-				</div>
-				<div class="document">
-					<h3 class="activity__title">文献指南</h3>
-					<a class="activity__more">更多>></a>
-					<div class="activity__line"></div>
-					<ul class="related__container">
-						<li class="related__item related__item--meeting1">
-							<span class="related__arrow">➜</span>
-							<p class="related__desc">内容内容内容内容内容内容内容内容内内容内容内容内容内容内容内容内容内</p>
-						</li>
-						<li class="related__item related__item--meeting2">
-							<span class="related__arrow">➜</span>
-							<p class="related__desc">内容内容内容内容内容内容内容内容内内容内容内容内容内容内容内容内容内</p>
-						</li>
-						<li class="related__item related__item--meeting3">
-							<span class="related__arrow">➜</span>
-							<p class="related__desc">内容内容内容内容内容内容内容内容内内容内容内容内容内容内容内容内容内</p>
-						</li>
-						<li class="related__item related__item--meeting4">
-							<span class="related__arrow">➜</span>
-							<p class="related__desc">内容内容内容内容内容内容内容内容内内容内容内容内容内容内容内容内容内</p>
-						</li>
-						<li class="related__item related__item--meeting5">
-							<span class="related__arrow">➜</span>
-							<p class="related__desc">内容内容内容内容内容内容内容内容内内容内容内容内容内容内容内容内容内</p>
-						</li>
-					</ul>
+			<div class="mod">
+				<div class="export">
+					<div class="review">
+						<div class="mod__hd">
+							<h3 class="mod__title">专家评审</h3>
+							<a class="mod__more">更多>></a>
+							<div class="mod__line"></div>
+						</div>
+						<div class="mod__bd">
+							<ul class="review__container">
+								<li class="review__item review__item--1">
+									<img src="../images/avatar.png" class="export__img">
+									<div class="block">
+										<span class="export__name">郎景和</span>
+										<span class="export__from">中国工程院院士</span>
+										<p class="export__detail">郎景和，男，1964 年毕业于白求恩医科大学医疗系，毕业后在中国医学科学院，中国协和医科大学北京协和医院工作中国协和医科大学北京协和医院工作</p>
+										<a href="#" class="export__link">了解详情</a>
+									</div>
+								</li>
+								<li class="review__item review__item--2">
+									<img src="../images/avatar.png" class="export__img">
+									<span class="export__name">郎景和</span>
+									<span class="export__from">中国工程院院士</span>
+									<p class="export__detail">郎景和，男，1964 年毕业于白求恩医科大学医疗系，毕业后在中国医学科学院，中国协和医科大学北京协和医院工作中国协和医科大学北京协和医院工作</p>
+									<a href="#" class="export__link">了解详情</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="interview">
+						<div class="mod__hd">
+							<h3 class="mod__title">专家访谈</h3>
+							<div class="mod__line"></div>
+						</div>
+						<div class="mod__bd">
+							<ul class="interview__container">
+								<li class="interview__item interview__item--1">
+									<img src="../images/avatar.png" class="export__img">
+									<h4 class="export__title">中国工程院院士1</h4>
+									<p class="export__detail">郎景和，男，1964 年毕业于白求恩医科大学医疗系，毕业后在中国医学科学院，中国协和医科大学北京协和医院工作中国协和医科大学北京协和医院工作</p>
+								</li>
+								<li class="interview__item interview__item--2">
+									<img src="../images/avatar.png" class="export__img">
+									<h4 class="export__title">中国工程院院士2</h4>
+									<p class="export__detail">郎景和，男，1964 年毕业于白求恩医科大学医疗系，毕业后在中国医学科学院，中国协和医科大学北京协和医院工作中国协和医科大学北京协和医院工作</p>
+								</li>
+								<li class="interview__item interview__item--3">
+									<img src="../images/avatar.png" class="export__img">
+									<h4 class="export__title">中国工程院院士3</h4>
+									<p class="export__detail">郎景和，男，1964 年毕业于白求恩医科大学医疗系，毕业后在中国医学科学院，中国协和医科大学北京协和医院工作中国协和医科大学北京协和医院工作</p>
+								</li>
+								<div class="interview__conversion">
+									<span class="interview__prev"><</span>
+									<span class="interview__next">></span>
+								</div>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</div>
-		<!-- </div> -->
-	</div>
-	<div class="footer">
-		<div class="footer__container">
-			<h2 class="footer__title">MEDICAL</h2>
-			<div class="footer__content">
-				<span class="footer__desc">网页内容仅供专业人士浏览</span>
-				<span class="copyright">Copyright 2000-2015 DXY All Rights Reserved</span>
+			<div class="mod">
+				<div class="related">
+					<div class="meeting">
+						<div class="mod__hd">
+							<h3 class="mod__title">会议报道</h3>
+							<a class="mod__more">更多>></a>
+							<div class="mod__line"></div>
+						</div>
+						<div class="mod__bd">
+							<ul class="related__container">
+								<li class="related__item related__item--meeting1">
+									<span class="related__arrow">➜</span>
+									<p class="related__desc">
+										<a href="#" class="related__link">
+											内容内容内容内容内容内容内容内容内内容内容内容内容内容内容内容内容内
+										</a>
+									</p>
+								</li>
+								<li class="related__item related__item--meeting2">
+									<span class="related__arrow">➜</span>
+									<p class="related__desc">
+										<a href="#" class="related__link">
+											内容内容内容内容内容内容内容内容内内容内容内容内容内容内容内容内容内
+										</a>
+									</p>
+								</li>
+								<li class="related__item related__item--meeting3">
+									<span class="related__arrow">➜</span>
+									<p class="related__desc">
+										<a href="#" class="related__link">
+											内容内容内容内容内容内容内容内容内内容内容内容内容内容内容内容内容内
+										</a>
+									</p>
+								</li>
+								<li class="related__item related__item--meeting4">
+									<span class="related__arrow">➜</span>
+									<p class="related__desc">
+										<a href="#" class="related__link">
+											内容内容内容内容内容内容内容内容内内容内容内容内容内容内容内容内容内
+										</a>
+									</p>
+								</li>
+								<li class="related__item related__item--meeting5">
+									<span class="related__arrow">➜</span>
+									<p class="related__desc">
+										<a href="#" class="related__link">
+											内容内容内容内容内容内容内容内容内内容内容内容内容内容内容内容内容内
+										</a>
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="document">
+						<div class="mod__hd">
+							<h3 class="mod__title">文献指南</h3>
+							<a class="mod__more">更多>></a>
+							<div class="mod__line"></div>
+						</div>
+						<div class="mod__bd">
+							<ul class="related__container">
+								<li class="related__item related__item--meeting1">
+									<span class="related__arrow">➜</span>
+									<p class="related__desc">
+										<a href="#" class="related__link">
+											内容内容内容内容内容内容内容内容内内容内容内容内容内容内容内容内容内
+										</a>
+									</p>
+								</li>
+								<li class="related__item related__item--meeting2">
+									<span class="related__arrow">➜</span>
+									<p class="related__desc">
+										<a href="#" class="related__link">
+											内容内容内容内容内容内容内容内容内内容内容内容内容内容内容内容内容内
+										</a>
+									</p>
+								</li>
+								<li class="related__item related__item--meeting3">
+									<span class="related__arrow">➜</span>
+									<p class="related__desc">
+										<a href="#" class="related__link">
+											内容内容内容内容内容内容内容内容内内容内容内容内容内容内容内容内容内
+										</a>
+									</p>
+								</li>
+								<li class="related__item related__item--meeting4">
+									<span class="related__arrow">➜</span>
+									<p class="related__desc">
+										<a href="#" class="related__link">
+											内容内容内容内容内容内容内容内容内内容内容内容内容内容内容内容内容内
+										</a>
+									</p>
+								</li>
+								<li class="related__item related__item--meeting5">
+									<span class="related__arrow">➜</span>
+									<p class="related__desc">
+										<a href="#" class="related__link">
+											内容内容内容内容内容内容内容内容内内容内容内容内容内容内容内容内容内
+										</a>
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer__container">
+				<h2 class="footer__title">MEDICAL</h2>
+				<div class="footer__content">
+					<span class="footer__desc">网页内容仅供专业人士浏览</span>
+					<span class="copyright">Copyright 2000-2015 DXY All Rights Reserved</span>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 </body>
 <!--common.js 为webpack的CommonsChunkPlugin插件所生成的，需保留，如果要调整，请自行修改webpack配置-->
+<script src="../js/slideout.min.js"></script>
 <script src="../js/common.js"></script>
 <script src="../js/main.js"></script>
 </html>
