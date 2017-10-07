@@ -1,4 +1,4 @@
-@media only screen and (min-width: 320px) and (max-width: 960px){
+@media only screen and (min-width: 320px) and (max-width: 720px){
 	.header{
 		background: url(../../images/header_mobile.png) no-repeat;
 		background-size: contain;
@@ -27,6 +27,7 @@
 		width: 30px;
 		height: 30px;
 		position: absolute;
+		//position: fixed;
 		top: 20px;
 		left: 12px;
 		outline:none;
@@ -58,7 +59,7 @@
 	  top: 0;
 	  bottom: 0;
 	  right: 0;
-	  z-index: 4;
+	  z-index: 5;
 	  width: 256px;
 	  overflow-y: scroll;
 	  -webkit-overflow-scrolling: touch;
@@ -67,7 +68,7 @@
 	.panel,
 	.slideout-panel {
 	  position: relative;
-	  z-index: 4;
+	  z-index: 5;
 	}
 
 	.slideout-open,
@@ -78,5 +79,27 @@
 
 	.slideout-open .slideout-menu {
 	  display: block;
+	}
+	.top{
+		display: none;
+		z-index: 3;
+		position: fixed;
+		right: 15px;
+		bottom: 15px;
+	}
+	#goPageTop{
+		display:block;
+		width: 40px;
+		height: 40px;
+		border-radius: 20px;
+		opacity: 0.8;
+		background: #ff5a0f;
+		color: white;
+		text-align: center;
+		line-height: 40px;
+		font-size: 24px;
+		&:hover{
+			text-decoration: none;
+		}
 	}
 }

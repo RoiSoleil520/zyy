@@ -1,5 +1,5 @@
 $orange: #ff5a0f;
-@media only screen and (min-width: 320px) and (max-width: 960px){
+@media only screen and (min-width: 320px) and (max-width: 720px){
 	.activity{
 		margin: 0 15px;
 	}
@@ -59,6 +59,7 @@ $orange: #ff5a0f;
 			height: 130px;
 			text-align: center;
 			margin-left: 7%;
+			margin-bottom: 50px;
 			border-radius: 64px;
 			position: relative;
 			z-index: 2;
@@ -234,7 +235,7 @@ $orange: #ff5a0f;
 			}
 		}
 		&__conversion{
-			margin-top: 10px;
+			margin-top: 18px;
 			text-align: center;
 			margin-bottom: 30px;
 		}
@@ -288,15 +289,17 @@ $orange: #ff5a0f;
 }
 
 @media only screen and (max-width: 360px){
-	.activity{
-		margin: 0 5px;
-	}
 	.introduction{
-		&__detail{
-			width: 90%;
-		}
 		&__item{
-			margin-left: 2%;
+			width: 100px;
+			height: 100px;
+		}
+		.icon-butterfly, .icon-spinner2, .icon-hand, .icon-bird, .icon-umbrella{
+			line-height: 100px;
+			font-size: 50px;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
 		}
 	}
+	
 }

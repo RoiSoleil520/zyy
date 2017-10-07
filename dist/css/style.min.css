@@ -2533,7 +2533,7 @@ table {
 
 /*@import './lib/common';*/
 /*mix*/
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 720px) {
   .header {
     background: url(../../images/header_pc.png) no-repeat;
     background-size: contain;
@@ -2591,7 +2591,7 @@ table {
       color: #ff5a0f; }
       .btn__link:hover {
         text-decoration: none; }
-  .menu {
+  .menu, .top {
     display: none; } }
 
 .cover {
@@ -2601,11 +2601,11 @@ table {
   bottom: 0;
   right: 0;
   background: #f4f4f4;
-  z-index: 3;
+  z-index: 4;
   opacity: 0.6;
   display: none; }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 720px) {
   .activity {
     width: 960px;
     margin: 0 auto; }
@@ -2879,7 +2879,7 @@ table {
         -ms-flex: 1;
             flex: 1; } }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 720px) {
   .footer {
     margin-top: 95px;
     background: #f3f3f3;
@@ -2906,7 +2906,7 @@ table {
       color: #959595; } }
 
 /* mobile */
-@media only screen and (min-width: 320px) and (max-width: 960px) {
+@media only screen and (min-width: 320px) and (max-width: 720px) {
   .header {
     background: url(../../images/header_mobile.png) no-repeat;
     background-size: contain;
@@ -2955,7 +2955,7 @@ table {
     top: 0;
     bottom: 0;
     right: 0;
-    z-index: 4;
+    z-index: 5;
     width: 256px;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
@@ -2963,15 +2963,35 @@ table {
   .panel,
   .slideout-panel {
     position: relative;
-    z-index: 4; }
+    z-index: 5; }
   .slideout-open,
   .slideout-open body,
   .slideout-open {
     overflow: hidden; }
   .slideout-open .slideout-menu {
-    display: block; } }
+    display: block; }
+  .top {
+    display: none;
+    z-index: 3;
+    position: fixed;
+    right: 15px;
+    bottom: 15px; }
+  #goPageTop {
+    display: block;
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 20px;
+            border-radius: 20px;
+    opacity: 0.8;
+    background: #ff5a0f;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    font-size: 24px; }
+    #goPageTop:hover {
+      text-decoration: none; } }
 
-@media only screen and (min-width: 320px) and (max-width: 960px) {
+@media only screen and (min-width: 320px) and (max-width: 720px) {
   .activity {
     margin: 0 15px; }
   .mod {
@@ -3020,6 +3040,7 @@ table {
       height: 130px;
       text-align: center;
       margin-left: 7%;
+      margin-bottom: 50px;
       -webkit-border-radius: 64px;
               border-radius: 64px;
       position: relative;
@@ -3181,7 +3202,7 @@ table {
     .interview__item--2, .interview__item--3 {
       display: none; }
   .interview__conversion {
-    margin-top: 10px;
+    margin-top: 18px;
     text-align: center;
     margin-bottom: 30px; }
   .interview__prev, .interview__next {
@@ -3221,14 +3242,16 @@ table {
     margin-top: 30px; } }
 
 @media only screen and (max-width: 360px) {
-  .activity {
-    margin: 0 5px; }
-  .introduction__detail {
-    width: 90%; }
   .introduction__item {
-    margin-left: 2%; } }
+    width: 100px;
+    height: 100px; }
+  .introduction .icon-butterfly, .introduction .icon-spinner2, .introduction .icon-hand, .introduction .icon-bird, .introduction .icon-umbrella {
+    line-height: 100px;
+    font-size: 50px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; } }
 
-@media only screen and (min-width: 320px) and (max-width: 960px) {
+@media only screen and (min-width: 320px) and (max-width: 720px) {
   .footer {
     margin-top: 65px;
     background: #f3f3f3;
